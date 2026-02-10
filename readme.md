@@ -196,15 +196,15 @@ Server runs at: `https://qualifier-bfhl.vercel.app/`
 **Using curl:**
 ```bash
 # Health check
-curl http://localhost:3000/health
+curl https://qualifier-bfhl.vercel.app/health
 
 # Fibonacci
-curl -X POST http://localhost:3000/bfhl \
+curl -X POST https://qualifier-bfhl.vercel.app/bfhl \
   -H "Content-Type: application/json" \
   -d '{"fibonacci": 7}'
 
 # Prime
-curl -X POST http://localhost:3000/bfhl \
+curl -X POST https://qualifier-bfhl.vercel.app/bfhl \
   -H "Content-Type: application/json" \
   -d '{"prime": [2,4,7,9,11]}'
 ```
